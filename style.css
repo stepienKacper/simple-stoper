@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px dashed red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    background: #48484f;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* styling container */
+.container {
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styling text */
+
+#title {
+    color: black;
+    width: 100%;
+}
+#time {
+    margin: 20px;
+    padding: 20px;
+    font-size: 2.6rem;
+}
+
+/* styling buttons */
+.button {
+    padding: 20px 40px;
+}
+
+button {
+    font-size: 1.4rem;
+    border: none;
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.start {
+    background: rgb(47, 233, 47);
+    color: white;
+    font-weight: bold;
+}
+
+.start:hover {
+    background: rgb(15, 180, 15);
+}
+
+.stop {
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+
+
+.stop:hover {
+    background: darkred;
+}
+
+footer {
+    position: fixed;
+    bottom: 4px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        width: 200px;
+    }
+  }
